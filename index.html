@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>ZORO ZIP // Hacker Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+
+  <main class="terminal">
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <span>ZORO_ZIP.exe</span>
+      <span class="status">● SYSTEM ONLINE</span>
+    </header>
+
+    <section class="hero">
+      <p class="prompt">root@zoro:~$ initialize_interface</p>
+      <h1 data-text="ZORO ZIP">ZORO ZIP</h1>
+      <p class="subtitle">[ SECURE TERMINAL // MATRIX MODE ]</p>
+    </section>
+
+    <section class="image-panel">
+      <div class="panel-title">&gt; IMAGE_BUFFER</div>
+      <div class="image-frame">
+        <img src="zoro-image.jpg" alt="Uploaded image placeholder">
+        <div class="image-overlay">IMAGE_LOADED // 100%</div>
+      </div>
+    </section>
+
+    <section class="input-panel">
+      <div class="panel-title">&gt; USER_IDENTIFICATION</div>
+      <label for="nameInput">ENTER_NAME:</label>
+      <div class="input-row">
+        <span class="prefix">&gt;_</span>
+        <input id="nameInput" type="text" maxlength="40"
+               placeholder="Type your name..."
+               autocomplete="off">
+        <button id="enterBtn" type="button">EXECUTE</button>
+      </div>
+      <p id="output" class="output">Awaiting input...</p>
+    </section>
+
+    <section class="terminal-log" aria-live="polite">
+      <div>&gt; connection established</div>
+      <div>&gt; encryption layer: ACTIVE</div>
+      <div>&gt; matrix stream: RUNNING</div>
+      <div id="clock">&gt; local_time: --:--:--</div>
+    </section>
+
+    <section class="music-panel">
+      <div class="panel-title">&gt; AUDIO_MODULE</div>
+      <p>Background music is ready. Click the button to start/stop it.</p>
+      <button id="musicBtn" type="button">▶ START MUSIC</button>
+
+      <!-- Basic background music integration -->
+      <audio id="bgMusic" loop preload="auto">
+        <source src="Zorozip3.mp3" type="audio/mpeg">
+        Your browser does not support HTML5 audio.
+      </audio>
+    </section>
+
+    <footer>
+      <span>ZORO ZIP // 2026</span>
+      <span>ACCESS_LEVEL: GREEN</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
